@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDebug|x64'">
+    <LocalDebuggerCommand>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)\$(ProjectName).exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QTDIR>D:\Qt\Qt5.12.7\5.12.7\msvc2017_64</QTDIR>
+    <LocalDebuggerCommand>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)\$(ProjectName).exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QTDIR>D:\Qt\Qt5.12.7\5.12.7\msvc2017_64</QTDIR>
+    <LocalDebuggerCommand>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)\VGScenarioEditord.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommandArguments>-v=无人机视点 -d 60.0 -s ../scenario/演示场景-可见光-测试视点.vgscn</LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QTDIR>D:\Qt\Qt5.12.7\5.12.7\msvc2017_64</QTDIR>
+    <LocalDebuggerCommand>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)\$(ProjectName).exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QTDIR>D:\Qt\Qt5.12.7\5.12.7\msvc2017_64</QTDIR>
+    <LocalDebuggerCommand>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)\VGScenarioEditor.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>$(SolutionDir)bin_$(PlatformTarget)_$(Configuration)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommandArguments>--viewpoint=无人机视点 --duration=0.25 -s ../scenario/演示场景-可见光-测试视点.vgscn</LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWithDebug|Win32'">
+    <LocalDebuggerEnvironment>PATH=$(QtInstallDir)\bin%3b$(VG_DEV_LIBS)\bin_$(PlatformTarget)_$(Configuration)%3b$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
